@@ -42,7 +42,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/hum1020' component={Humanities} />
+          <Route path='/hum1020' component={Humanities} />
+          <Route path='/hum1020/renaissance' component={Humanities} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
