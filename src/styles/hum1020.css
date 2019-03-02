@@ -19,7 +19,24 @@
   color: rgb(27, 27, 27);
 }
 
-.App-link {
+.link {
   color: #3573e6;
   text-decoration: none; 
+}
+
+.imageBox {
+  position: relative;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
 }

@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import '../App.css';
 
 class Art extends Component {
   render() {
     return (
       <div className='App' id={this.props.idName}>
-        <img src={this.props.imageUrl} alt='logo' width='700'/>
-        {/* </header> */}
+        <div className='imageBox'>
+          <div className='imageIn'>
+            <img src={this.props.imageUrl} alt='logo' width='700' />
+          </div>
+          <div className='hoverImg'>
+            <img src={this.props.imageEffectUrl} alt='logo' width='700' />
+          </div>
+        </div>
         <h3>{this.props.artName}</h3>
         <p>
           <b>
@@ -26,7 +31,7 @@ class Art extends Component {
           </b>{' '}
           {this.props.technique}
         </p>
-        <a className='App-link' href={this.props.learnMoreUrl} target='_blank' rel='noopener noreferrer'>
+        <a className='link' href={this.props.learnMoreUrl} target='_blank' rel='noopener noreferrer'>
           Learn more
         </a>
       </div>
