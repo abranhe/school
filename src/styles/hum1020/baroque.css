@@ -25,18 +25,17 @@
 }
 
 .amazing {
-
-  --slider-height-percentage: 60%;
-  --slider-transition-duration: 770ms;
-  --organic-arrow-thickness: 8px;
-  --organic-arrow-border-radius: 19px;
-  --organic-arrow-height: 40px;
-  --organic-arrow-color: #cc7c80;
-  --control-button-width: 10%;
-  --control-button-height: 39%;
+  --slider-height-percentage: 65%;
+  --slider-transition-duration: 211ms;
+  --organic-arrow-thickness: 5px;
+  --organic-arrow-border-radius: 30px;
+  --organic-arrow-height: 34px;
+  --organic-arrow-color: #519c97;
+  --control-button-width: 11%;
+  --control-button-height: 38%;
   --control-button-background: transparent;
-  --control-bullet-color: #f09297;
-  --control-bullet-active-color: #cc7c80;
-  --loader-bar-color: #ffffff;
-  --loader-bar-height: 6px;
+  --control-bullet-color: #ffffff;
+  --control-bullet-active-color: #919191;
+  --loader-bar-color: transparent;
+  --loader-bar-height: 1px;
 }
