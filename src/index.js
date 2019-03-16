@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
-import './index.css';
-import data from './data/personal';
+import './styles/index.css';
+import {links, badges} from './data';
 
-import Humanities from './classes/hum1020';
+// HUM102O
+import Hum1020 from './classes/hum1020';
+import Renaissance from './classes/hum1020/renaissance';
+import Baroque from './classes/hum1020/baroque';
 
 const Home = () => {
   return (
-    <div className='App'>
-      <div className='App-header'>
+    <div className='default'>
+      <div className='defaultStyle'>
         <h1 align='center'>School Projects</h1>
         <div>
-          <a href={data.github}>
-            <img src={data.githubBadge} alt='github' />
+          <a href={links.github}>
+            <img src={badges.github} alt='github' />
           </a>{' '}
-          <a href={data.twitter}>
-            <img src={data.twitterBadge} alt='twitter' />
+          <a href={links.twitter}>
+            <img src={badges.twitter} alt='twitter' />
           </a>
         </div>
       </div>
@@ -27,8 +30,8 @@ const Home = () => {
 
 const NoMatch = () => {
   return (
-    <div className='App'>
-      <div className='App-header'>
+    <div className='default'>
+      <div className='defaultStyle'>
         <h1 align='center'>Nothing Found :/</h1>
         <p align='center'>Why are you here?</p>
       </div>
@@ -42,8 +45,9 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/hum1020' component={Humanities} />
-          <Route path='/hum1020/renaissance' component={Humanities} />
+          <Route exact path='/hum1020' component={Hum1020} />
+          <Route exact path='/hum1020/renaissance' component={Renaissance} />
+          <Route exact path='/hum1020/baroque' component={Baroque} />
           <Route component={NoMatch} />
         </Switch>
       </Router>

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import Art from '../components/art';
-import data, { githubLink } from '../data/hum1020';
-import '../styles/hum1020.css';
+import Art from '../../components/hum1020/art';
+import data from '../../data/hum1020/renaissance';
+import { githubLink, name } from '../../data';
+import { copyright, date } from '../../data/symbols';
+import '../../styles/hum1020/renaissance.css';
 
-class Humanities extends Component {
+class Renaissance extends Component {
   render() {
     const Arts = data.map((art) => (
       <div>
@@ -27,10 +29,8 @@ class Humanities extends Component {
         {Arts}
         <br />
         <footer>
-          &copy; Carlos Abraham Hernandez | This website is open source on{' '}
-          <a className='link' href={githubLink}>
-            github
-          </a>.
+          {date} {copyright} {name} | This website is open source on{' '}
+          <a className='link' href={githubLink}>github</a>.
         </footer>
         <br />
       </div>
@@ -38,4 +38,4 @@ class Humanities extends Component {
   }
 }
 
-export default Humanities;
+export default Renaissance;

@@ -1,11 +1,11 @@
-import delivery from '../assets/hum1020/delivery-of-the-keys.jpg';
-import deliveryFixed from '../assets/hum1020/delivery-of-the-keys-fixed.jpg';
-import agony from '../assets/hum1020/geths-mantegna.jpg';
-import agonyFixed from '../assets/hum1020/geths-mantegna-fixed.jpg';
-import pietro from '../assets/hum1020/pietro-perugino.jpg';
-import pietroFixed from '../assets/hum1020/pietro-perugino-fixed.jpg';
-import madonna from '../assets/hum1020/madonna-with-child.jpg';
-import madonnaFixed from '../assets/hum1020/madonna-with-child-fixed.jpg';
+import delivery from '../../assets/hum1020/delivery-of-the-keys.jpg';
+import deliveryFixed from '../../assets/hum1020/delivery-of-the-keys-fixed.jpg';
+import agony from '../../assets/hum1020/geths-mantegna.jpg';
+import agonyFixed from '../../assets/hum1020/geths-mantegna-fixed.jpg';
+import pietro from '../../assets/hum1020/pietro-perugino.jpg';
+import pietroFixed from '../../assets/hum1020/pietro-perugino-fixed.jpg';
+import madonna from '../../assets/hum1020/madonna-with-child.jpg';
+import madonnaFixed from '../../assets/hum1020/madonna-with-child-fixed.jpg';
 
 export default [
   {
@@ -49,5 +49,3 @@ export default [
     id: 'sfumato'
   }
 ];
-
-export const githubLink = 'https://github.com/abranhe/school/blob/master/src/classes/hum1020.js';
