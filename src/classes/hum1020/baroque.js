@@ -3,7 +3,7 @@ import Slider from 'react-awesome-slider';
 
 import data from '../../data/hum1020/baroque';
 import { name, githubLink } from '../../data';
-import { copyright } from '../../data/symbols';
+import { copyright, date } from '../../data/symbols';
 
 import 'react-awesome-slider/dist/styles.css';
 import '../../styles/hum1020/baroque.css';
@@ -38,7 +38,7 @@ class Baroque extends Component {
         {paitings}
         <br />
         <footer>
-          {new Date().getFullYear()} {copyright} {name} | This website is open source on{' '}
+          {date} {copyright} {name} | This website is open source on{' '}
           <a className='link' href={githubLink}>github</a>.
         </footer>
         <br />

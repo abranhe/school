@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import data from '../../data/hum1020';
-import { githubLink } from '../../data';
+import { githubLink, name } from '../../data';
+import { copyright, date } from '../../data/symbols';
+
 import '../../styles/index.css';
 
 const url = 'https://school.abranhe.com/hum1020/';
@@ -27,10 +29,8 @@ class Baroque extends Component {
         {assignments}
         <br />
         <footer>
-          &copy; Carlos Abraham Hernandez | This website is open source on{' '}
-          <a className='link' href={githubLink}>
-            github
-          </a>.
+          {date} {copyright} {name} | This website is open source on{' '}
+          <a className='link' href={githubLink}>github</a>.
         </footer>
         <br />
       </div>

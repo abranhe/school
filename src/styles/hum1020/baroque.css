@@ -24,19 +24,19 @@
   text-decoration: none; 
 }
 
-.imageBox {
-  position: relative;
-}
+.amazing {
 
-.imageBox .hoverImg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-}
-
-.imageBox:hover .hoverImg {
-  display: block;
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 770ms;
+  --organic-arrow-thickness: 8px;
+  --organic-arrow-border-radius: 19px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #cc7c80;
+  --control-button-width: 10%;
+  --control-button-height: 39%;
+  --control-button-background: transparent;
+  --control-bullet-color: #f09297;
+  --control-bullet-active-color: #cc7c80;
+  --loader-bar-color: #ffffff;
+  --loader-bar-height: 6px;
 }
