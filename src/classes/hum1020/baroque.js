@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-awesome-slider';
-
 import data from '../../data/hum1020/baroque';
-import { name, githubLink } from '../../data';
-import { copyright, date } from '../../data/symbols';
+import Footer from '../../components/footer';
 
 import 'react-awesome-slider/dist/styles.css';
 import '../../styles/hum1020/baroque.css';
@@ -14,7 +12,7 @@ class Baroque extends Component {
       return (
         <div key={key} style={{ margin: '10%' }}>
           <h1 style={{ paddingBottom: 20 }}>{art.name}</h1>
-          <Slider className='amazing'>
+          <Slider className="amazing">
             {art.images.map((image, key) => {
               return <div key={key} data-src={image} />;
             })}
@@ -33,14 +31,11 @@ class Baroque extends Component {
     });
 
     return (
-      <div className='default'>
+      <div className="default">
         {slider}
         {paitings}
         <br />
-        <footer>
-          {date} {copyright} {name} | This website is open source on{' '}
-          <a className='link' href={githubLink}>github</a>.
-        </footer>
+        <Footer />
         <br />
       </div>
     );

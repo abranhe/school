@@ -6,6 +6,7 @@
     "react": "^16.8.3",
     "react-awesome-slider": "^0.5.2",
     "react-dom": "^16.8.3",
+    "react-grid-gallery": "^0.5.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5"
   },

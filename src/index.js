@@ -9,6 +9,7 @@ import {links, badges} from './data';
 import Hum1020 from './classes/hum1020';
 import Renaissance from './classes/hum1020/renaissance';
 import Baroque from './classes/hum1020/baroque';
+import Concert from './classes/hum1020/concert';
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ class App extends Component {
           <Route exact path='/hum1020' component={Hum1020} />
           <Route exact path='/hum1020/renaissance' component={Renaissance} />
           <Route exact path='/hum1020/baroque' component={Baroque} />
+          <Route exact path='/hum1020/concert' component={Concert} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
